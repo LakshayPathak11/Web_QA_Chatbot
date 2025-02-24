@@ -4,7 +4,7 @@ from langchain_together import ChatTogether
 import os
 from langchain_core.messages import HumanMessage
 
-os.environ["TOGETHER_API_KEY"] = "3e9d0c5e9f23e753a1a181600b32385052f3b81554a95b6101ec192cd95c4ae1"
+os.environ["TOGETHER_API_KEY"] = "ENTER YOUR API KEY"
 os.environ["FIRECRAWL_API_KEY"] = ("FIRECRAWL_API_KEY")
 
 from langchain_community.document_loaders.firecrawl import FireCrawlLoader
@@ -15,7 +15,7 @@ query = []
 
 def fetch_data_from_url(url):
     loader = FireCrawlLoader(
-        api_key="fc-e157bfb5e4d84dc0a24a7701285d776d", 
+        api_key="ENTER YOUR API KEY", 
         url=url,
         mode="scrape"
     )
